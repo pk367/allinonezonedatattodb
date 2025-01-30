@@ -21,13 +21,19 @@ streamlit_apps = {
     "Weekly Data": "https://zonedatatodbweekly.streamlit.app/?embed=true"
 }
 
-# Responsive grid layout for iframes
-cols = st.columns(2)  # Two-column layout for better visualization
+# Define the number of columns for the grid layout
+num_columns = 4
+cols = st.columns(num_columns)
 
+# Adjust iframe size for better fit
+iframe_height = 200
+
+# Display iframes in a grid layout
 for i, (app_name, app_url) in enumerate(streamlit_apps.items()):
-    with cols[i % 2]:
+    col_index = i % num_columns
+    with cols[col_index]:
         st.subheader(app_name)
-        st.write(
-            f'<iframe src="{app_url}" width="100%" height="300" frameborder="0"></iframe>', 
+        st.markdown(
+            f'<iframe src="{app_url}" width="100%" height="{iframe_height}" frameborder="0"></iframe>', 
             unsafe_allow_html=True
         )
