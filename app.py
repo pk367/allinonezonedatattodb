@@ -6,7 +6,16 @@ st.title("Zone Data Streamlit Applications Dashboard")
 
 # List of Streamlit app URLs with embed parameter
 streamlit_apps = {
+    "1 Minute Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
+    "3 Minute Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
+    "5 Minute Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
+    "10 Minute Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
+    "15 Minute Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
+    "30 Minute Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
+    "1 Hour Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
     "75 Minute Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
+    "2 Hour Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
+    "125 Minute Data": "https://zonedatatodb75minute.streamlit.app/?embed=true",
     "Daily Data": "https://zonedatatodbdaily.streamlit.app/?embed=true",
     "Monthly Data": "https://zonedatatodbmonthly.streamlit.app/?embed=true",
     "Weekly Data": "https://zonedatatodbweekly.streamlit.app/?embed=true"
